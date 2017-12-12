@@ -5,7 +5,7 @@ namespace Page;
 class login
 {
     // include url of current page
-    public static $URL = '/';
+   /* public static $URL = '/';
     public static $dLeads =;
     public static $dProspects =;
     public static $dClients =;
@@ -14,7 +14,7 @@ class login
     public static $dLeads =;
     public static $dLeads =;
     public static $dLeads =;
-    public static $dLeads =;
+    public static $dLeads =;*/
 
 
     /**
@@ -42,7 +42,7 @@ class login
      */
     public function Dashboard(\AcceptanceTester $I)
     {
-    $I=$this
+    $I=$this;
 
     }
 }
