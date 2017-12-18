@@ -2,9 +2,13 @@
 
 namespace Page;
 
-class login
+class POMLogin
 {
     // include url of current page
+    public static $URL = '/';
+    public static $username='email';
+    public static $password = 'password';
+    public static $loginButton = 'Login';
    /* public static $URL = '/';
     public static $dLeads =;
     public static $dProspects =;
@@ -28,8 +32,10 @@ class login
      * You can append any additional parameter to URL
      * and use it in tests like: Page\Edit::route('/123-post');
      */
-    public function __construct()
+    public $tester;
+    public function __construct(\AcceptanceTester $I)
     {
+        $this->tester=$I;
     }
 
     public static function route($param)
@@ -38,11 +44,18 @@ class login
     }
 
     /**
+     * @param $email
+     * @param $password
      * @return mixed
      */
-    public function Dashboard(\AcceptanceTester $I)
+    public function Login($email,$password)
     {
-    $I=$this;
-
+        $I=$this->tester;
+        $I->amOnPage(self::$URL);
+        $I->fillField(self::$username, $email);
+        $I->fillField(self::$password,$password);
+        $I->click(self::$loginButton);
+        $I->amOnPage("/overview");
+        return $I;
     }
 }

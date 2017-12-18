@@ -8,5 +8,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: https://democis.agentcisapp.com
+            url: https://democis.staging.agentcis.com
         - \Helper\Acceptance
