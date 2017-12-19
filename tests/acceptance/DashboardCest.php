@@ -16,9 +16,6 @@ class DashboardCest
     // tests
     public function DashboardSmokeTest(AcceptanceTester $I,\Step\Acceptance\StepLogin $stepLogin)
     {
-       // $I = new AcceptanceTester($I);
-        $stepLogin->UserLogin_Admin();
 
-        //$stepDashboard->LinkTest();
     }
 }
