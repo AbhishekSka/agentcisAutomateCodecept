@@ -9,14 +9,16 @@ class DashboardCest
 
     public function _after(AcceptanceTester $I)
     {
+
+
     }
 
     // tests
-    public function DashboardSmokeTest(AcceptanceTester $I,\Step\Acceptance\StepLogins $stepLogin)
+    public function DashboardSmokeTest(AcceptanceTester $I,\Step\Acceptance\StepLogin $stepLogin)
     {
        // $I = new AcceptanceTester($I);
-        $stepLogin->loginAdmin();
-        $I->amOnPage('/overview');
+        $stepLogin->UserLogin_Admin();
 
+        //$stepDashboard->LinkTest();
     }
 }
