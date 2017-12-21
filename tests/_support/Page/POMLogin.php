@@ -7,9 +7,9 @@ class POMLogin
     // include url of current page
     // public static $URL = '/';
     const URL = '/';
-    public static $username='email';
-    public static $password = 'password';
-    public static $loginButton = 'Login';
+    public static $username='//input[@id="email"]';
+    public static $password = '//input[@id="password"]';
+    public static $loginButton = '//button[@name="Login"]';
    /* public static $URL = '/';
     public static $dLeads =;
     public static $dProspects =;

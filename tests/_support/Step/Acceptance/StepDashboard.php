@@ -6,7 +6,6 @@ class StepDashboard extends \AcceptanceTester
     public function Linktest()
     {
 
-        $user->loginAsAdmin();
         $modules = [
             '/clients' => 200,
             '/partners' => 404,
