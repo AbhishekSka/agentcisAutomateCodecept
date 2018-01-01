@@ -1,6 +1,6 @@
 <?php
 
-namespace Page;
+namespace Page\Acceptance;
 
 class POMLogin
 {
@@ -10,16 +10,7 @@ class POMLogin
     public static $username='//input[@id="email"]';
     public static $password = '//input[@id="password"]';
     public static $loginButton = '//button[@name="Login"]';
-   /* public static $URL = '/';
-    public static $dLeads =;
-    public static $dProspects =;
-    public static $dClients =;
-    public static $dPartners =;
-    public static $dLeads =;
-    public static $dLeads =;
-    public static $dLeads =;
-    public static $dLeads =;
-    public static $dLeads =;*/
+
 
 
     /**

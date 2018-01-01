@@ -1,7 +1,7 @@
 <?php
 namespace Step\Acceptance;
 
-use Page\POMLogin;
+use Page\Acceptance\POMLogin;
 
 class StepLogin extends \AcceptanceTester
 {
